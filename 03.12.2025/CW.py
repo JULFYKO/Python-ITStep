@@ -14,6 +14,16 @@
 # Вхід:[1, 2, 3], [3, 4, 5]
 # Вихід:{1, 2, 4, 5}
 
+# *Завдання 4: Сортування списку кортежів
+# Відсортуйте список кортежів по другому елементу.
+# Вхід: [(1, 5), (2, 1), (3, 4)]
+# Вихід: [(2, 1), (3, 4), (1, 5)]
+ 
+# *Завдання 5: Плоский список
+# Зроби з вкладеного списку звичайний.
+# Вхід:[[1, 2], [3, 4, 5], [6]]
+# Вихід:[1, 2, 3, 4, 5, 6]
+ 
 input_list = [3, 14, 1, 25, 9, 100]
 output = [i for i in input_list if i > 10]
 print(output)
@@ -31,3 +41,13 @@ set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 unique= set1.difference(set2).union(set2.difference(set1))
 print(unique)
+
+
+input_list3 = [(1, 5), (2, 1), (3, 4)]
+sorted_list = sorted(input_list3, key=lambda x: x[1])
+print(sorted_list)
+
+
+input_list4 = [[1, 2], [3, 4, 5], [6]]
+flat_list = [j for i in input_list4 for j in i]
+print(flat_list)
