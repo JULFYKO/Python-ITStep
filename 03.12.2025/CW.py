@@ -39,7 +39,7 @@ print(count)
 
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
-unique= set1.difference(set2).union(set2.difference(set1))
+unique= set1.symmetric_difference(set2)
 print(unique)
 
 
